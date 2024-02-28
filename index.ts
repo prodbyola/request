@@ -1,10 +1,8 @@
-import { API_URL } from "@/env"
-import axios, { AxiosError } from "axios"
+import { API_URL } from 'src/env'
+import axios, { AxiosError } from 'axios'
 
 export class ApiService {
     private static instance: ApiService
-
-    private constructor() { }
 
     static find(): ApiService {
         if (!ApiService.instance) {
